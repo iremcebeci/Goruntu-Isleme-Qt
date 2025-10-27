@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>854</width>
+    <height>619</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Image Lab</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="QIcon::ThemeIcon::CameraPhoto"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="1">
+       <widget class="QPushButton" name="pushButton_averageFilter">
+        <property name="text">
+         <string>Average Filter</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Photo</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="pushButton_grayScaleImage">
+        <property name="text">
+         <string>Gray Scale</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QPushButton" name="pushButton_medianFilter">
+        <property name="text">
+         <string>Median Filter</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="pushButton_quiz">
+        <property name="text">
+         <string>Quiz</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QPushButton" name="pushButton_laplacianKernel">
+        <property name="text">
+         <string>Laplacian Kernel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0" colspan="3">
+       <widget class="QGraphicsView" name="graphicsView"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>854</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+   </widget>
+   <widget class="QMenu" name="menuIslem">
+    <property name="title">
+     <string>Operation</string>
+    </property>
+    <addaction name="action_redFilter"/>
+    <addaction name="action_greenFilter"/>
+    <addaction name="action_blueFilter"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuIslem"/>
+  </widget>
+  <action name="actionDosya_A">
+   <property name="text">
+    <string>Dosya Aç</string>
+   </property>
+  </action>
+  <action name="actionOkuma">
+   <property name="text">
+    <string>Okuma</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="action_redFilter">
+   <property name="text">
+    <string>Red</string>
+   </property>
+  </action>
+  <action name="action_greenFilter">
+   <property name="text">
+    <string>Green</string>
+   </property>
+  </action>
+  <action name="action_blueFilter">
+   <property name="text">
+    <string>Blue</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
